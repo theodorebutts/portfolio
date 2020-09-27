@@ -1,13 +1,202 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #383938;
+  --secondary: #4c6382;
+  --tertiary: #f5a177;
+  --light: #f2f2f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* General Application Styling */
+
+.page-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+html, body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  background: var(--light);
+  color: var(--primary);
+  font-family: 'Roboto';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 5px 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+a {
+  color: var(--tertiary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 15px;	
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: grab;
+  margin: 0 1px;
+  background: var(--primary);
+  color: #fff;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+/* Header Styling */
+.header {
+  background: var(--primary);
+}
+
+/* About Page Styling */
+.about-title {
+  padding: 20px;
+}
+.about-body {
+  padding: 50px;
+}
+.portrait {
+  max-width: 25%;
+  border: solid 5px var(--primary);
+  border-radius: 360px;
+}
+
+/* Portfolio Page Styling */
+.portfolio-title {
+  padding: 25px;
+}
+.wrapper {
+  padding-top: 50px;
+  justify-content: space-around;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  flex-flow: row wrap;
+  padding: 10px;
+  align-content: flex-start;
+}
+
+.card {
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+  margin: 2rem;
+  position: relative;
+  box-shadow: 0 2px 2px var(--tertiary), 0 6px 12px var(--tertiary);
+  border: solid 2px var(--tertiary);
+  font-size: 18px;
+  background-color: var(--tertiary);
+  color: var(--light);
+  font-weight: bold;
+  text-align: center;
+}
+
+.card .img-container {
+  height: 75%;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card .img-container img {
+  padding: 25px;
+}
+
+.portfolio-content {
+  margin-top: 10px;
+}
+
+/* Contact Page Styling */
+.contact-title {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+
+}
+
+/* Contact Page Styling */
+.resume-title {
+  padding: 20px;
+  text-align: center;
+}
+
+.resume-content {
+  text-align: center;
+}
+
+/* Footer Styling */
+.footer{
+  font-size: 14px;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--primary);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--tertiary);
+}
+
+.footer a {
+  color: var(--tertiary);
 }

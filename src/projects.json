@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Budget Tracker",
+        "image": "./images/budgetTracker.png",
+        "github": "https://github.com/theodorebutts/budget-tracker",
+        "deploy": "https://budgetschwa.herokuapp.com/"
+    },
+    {
+        "id": 2,
+        "name": "CMS Blog",
+        "image": "./images/techBlog.png",
+        "github": "https://github.com/theodorebutts/techBlog",
+        "deploy": "https://blogschwa.herokuapp.com/"
+    },
+    {
+        "id": 3,
+        "name": "Note Taker",
+        "image": "./images/noteTaker.png",
+        "github": "https://github.com/theodorebutts/noteTaker",
+        "deploy": "https://notesshwa.herokuapp.com/"
+    },
+    {
+        "id": 4,
+        "name": "Weather Dashboard",
+        "image": "./images/weatherDashboard.png",
+        "github": "https://github.com/theodorebutts/weatherDashboard",
+        "deploy": "https://theodorebutts.github.io/weatherDashboard/"
+    },
+    {
+        "id": 5,
+        "name": "Work Day Scheduler",
+        "image": "./images/dayPlanner.png",
+        "github": "https://github.com/theodorebutts/dayPlanner",
+        "deploy": "https://theodorebutts.github.io/dayPlanner/"
+    },
+    {
+        "id": 6,
+        "name": "Personal Dashboard",
+        "image": "./images/personalDashboard.png",
+        "github": "https://github.com/theodorebutts/personalDashboard",
+        "deploy": "https://theodorebutts.github.io/personalDashboard/"
+    },
+    {
+        "id": 7,
+        "name": "Password Generator",
+        "image": "./images/passwordGenerator.png",
+        "github": "https://github.com/theodorebutts/passworGenerator",
+        "deploy": "https://theodorebutts.github.io/passworGenerator/"
+    }
+]
