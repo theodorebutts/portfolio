@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers'
+import { Form } from 'react-bootstrap';
 
 function ContactForm() {
 
@@ -38,27 +39,27 @@ function ContactForm() {
 
     return (
         <section>
-            <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-                </div>
+            <h1 className="contact-title">Contact Me</h1>
+            <Form id="contact-form" onSubmit={handleSubmit}>
+                <Form.Group>
+                    <Form.Label htmlFor="name">Name:</Form.Label>
+                    <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="email">Email address:</Form.Label>
+                    <Form.Control type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="message">Message:</Form.Label>
+                    <Form.Control as="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                </Form.Group>
                 {errorMessage && (
                     <div>
                         <p className="error-test">{errorMessage}</p>
                     </div>
                 )}
-                <button data-testid="buttontag" type="submit">Submit</button>
-            </form>
+                <button type="submit">Submit</button>
+            </Form>
         </section>
     )
 }
