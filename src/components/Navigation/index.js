@@ -5,7 +5,7 @@ function Navigation(props) {
     const tabs = ['About Me', 'Portfolio', 'Contact', 'Resume']
 
     return (
-        <Navbar collapseOnSelect expand="lg" variant="light" className="header">
+        <Navbar collapseOnSelect expand="lg" variant="dark" className="header">
             <Navbar.Brand>Theodore Butts</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
